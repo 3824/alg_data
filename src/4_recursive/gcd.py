@@ -16,3 +16,10 @@ if __name__ == '__main__':
     m = 120
     n = 32
     print(gcd(m, n))
+
+# m = q * n + r
+# - r = m - q * n -> gcd(m, n) * x
+#   gcd(m, n) <= gcd(n, r)  gcd(m, n) is divisor of r, so gcd(m, n) is a common divisor of n and r.
+# - gcd(n, r) is a divisor of m (because of m = q * n + r).
+#   gcd(n, r) <= gcd(m, n)
+# => gcd(m, n) = gcd(n, r)
