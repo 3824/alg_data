@@ -1,6 +1,7 @@
-h_list = [2, 9, 4, 5, 1, 6, 10]
+## Frog problem
+h_list = [2, 9, 4, 5, 1, 6, 10] # height list of each point
 
-cost = [0 for i in range(len(h_list))]
+cost = [0 for i in range(len(h_list))] # cost list of each point
 cost[0] = 0
 cost[1] = abs(h_list[1] - h_list[0])
 
